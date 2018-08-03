@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Valinote Travel | Contact</title>
+			<link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+			<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans+Condensed:300" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Kavivanar|Crimson+Text" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="css/form.css">
+			<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+			<style>
+			#map {
+        width: 50%;
+        height: 500px;
+        background-color: grey;
+      }
+			@media only screen and (max-width: 1024px) {
+				#map {
+					width: 100%;
+				}
+			}
+			</style>
+</head>
+<body>
+
+<div class="wrapper" style="padding-bottom: 0px;">
+
+							<div class="show-menu">
+									<nav class="nav-margin">
+												<div class="menu-icon">
+															<i class="fa fa-bars fa-2x"></i>
+												</div>
+
+												<div class="logo">
+														<p class="brand">Kenneth Valinote</p>
+												</div>
+
+												<div class="menu">
+															<ul>
+																		<li><a href="../travel/about.html">About</a></li>
+																		<li><a href="../travel/travel.html">Travel</a></li>
+																		<li><a href="#">Contact</a></li>
+															</ul>
+												</div>
+									</nav>
+								</div>
+								<div style="clear: both; height: 30px;"></div>
+										<div class="contact-hero" style="height: 50vh;">
+											<div class="center-contact">
+											<h1 class="heroTitle" style="font-size: 6vmax;">CONTACT</h1>
+										</div>
+										</div>
+
+										<div class="container-widget">
+										<div class="col" style="width: 100%;">
+
+											<!-- FORM   -->
+											<section id="hire" style="font-size: 62.5%;">
+												<h1>Let's Work!</h1>
+												<p>Please contact me with any questions or inquiries!</p>
+												<form method="post" action="">
+													<div class="field name-box">
+														<input type="text" name="name" id="name" placeholder="Who Are You?" required/>
+														<label for="name">Name</label>
+														<span class="ss-icon">check</span>
+													</div>
+
+													<div class="field email-box">
+														<input type="text" name="email" id="email" placeholder="name@email.com" required/>
+														<label for="email">Email</label>
+														<span class="ss-icon">check</span>
+													</div>
+
+													<div class="field msg-box">
+														<textarea id="msg" name="comment" rows="4" placeholder="Your message goes here..."/></textarea>
+														<label for="msg">Msg</label>
+														<span class="ss-icon">check</span>
+													</div>
+
+													<input class="button" type="submit" name="submit" value="Send" />
+												</form>
+												<div id="error_message" style="width:100%; height:100%; display:none; ">
+						<h4>Error</h4>
+						Sorry there was an error sending your form.
+						</div>
+						<div id="success_message" style="width:100%; height:100%; display:none; ">
+						<h2>Success! Your Message was Sent Successfully.</h2>
+						</div>
+											</section>
+											<!-- End FORM -->
+
+												</div>
+
+										<div class="col" id="info">
+											<div>
+												<h1 class="heroTitle">Valinote Travel</h1>
+												<p>103 Dorado Ave. / Sewell, NJ 08080</p>
+												<p>609-634-7095 / kvalinote@gmail.com</p>
+												<div class="info-icons">
+												<i class="fab fa-2x fa-facebook-square footer-icons" onclick="window.location.href='https://www.facebook.com/kenvalinote'"></i>
+												<i class="fab fa-2x fa-instagram footer-icons" onclick="window.location.href='https://www.instagram.com/ayyosefo/'"></i>
+												<i class="fab fa-2x fa-linkedin-in footer-icons" onclick="window.location.href='https://www.linkedin.com/in/kvalinote/'"></i>
+												<i class="far fa-2x fa-envelope footer-icons" onclick="window.location.href='mailto:kvalinote@gmail.com'"></i>
+											</div>
+											</div>
+										</div>
+										<div class="col" id="map">
+											<div id="map"></div>
+											<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var home = {lat: 39.759370, lng: -75.082305};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 10, center: home});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: home, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFt87J9bmtNJxWy6KpSQCON9vhYRj0ILg&callback=initMap">
+    </script>
+										</div>
+										</div>
+
+								<!--<div style="clear:both; height: 60px;"></div>-->
+								<div class="about-footer">
+									<h5>©2018 Kenneth Valinote</h5>
+									<div class="icon-section">
+									<i class="fab fa-facebook-square footer-icons" onclick="window.location.href='https://www.facebook.com/kenvalinote'"></i>
+									<i class="fab fa-instagram footer-icons" onclick="window.location.href='https://www.instagram.com/ayyosefo/'"></i>
+									<i class="fab fa-linkedin-in footer-icons" onclick="window.location.href='https://www.linkedin.com/in/kvalinote/'"></i>
+									<i class="far fa-envelope footer-icons" onclick="window.location.href='mailto:kvalinote@gmail.com'"></i>
+								</div>
+								</div>
+
+									<script type="text/javascript">
+
+			// Menu-toggle button
+
+			$(document).ready(function() {
+						$(".menu-icon").on("click", function() {
+									$("nav ul").toggleClass("showing");
+						});
+			});
+
+			$(document).ready(function() {
+				$('.button-text').hide().fadeIn(1800);
+				$('.heroTitle').hide().fadeIn(1800);
+				$('nav').addClass('black');
+			});
+
+			// Input Lock
+$('textarea').blur(function () {
+    $('#hire textarea').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('textarea + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('textarea + label + span').css({'opacity': 0});
+        }
+    });
+});
+
+$('#hire .field:first-child input').blur(function () {
+    $('#hire .field:first-child input').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('.field:first-child input + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('.field:first-child input + label + span').css({'opacity': 0});
+        }
+    });
+});
+
+$('#hire .field:nth-child(2) input').blur(function () {
+    $('#hire .field:nth-child(2) input').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('.field:nth-child(2) input + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('.field:nth-child(2) input + label + span').css({'opacity': 0});
+        }
+    });
+});
+
+
+			</script>
+
+			<script>
+$(function()
+{
+    function after_form_submitted(data)
+    {
+        if(data.result == 'success')
+        {
+            $('#hire').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="submit"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+
+        }//else
+    }
+
+	$('#hire').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' );
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Sending ...');
+        });
+
+
+                    $.ajax({
+                type: "POST",
+                url: 'handler.php',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json'
+            });
+
+      });
+});
+</script>
+
+</body>
+</html>
